@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
+import {Link, Switch, Route} from "react-router-dom";
 import './App.scss';
 import axios from 'axios';
-import Approved from '../components/Approved.js'
+import Intro from './components/Intro'
+import Camera from './components/Camera';
+import Approved from './components/Approved';
+import TryAgain from './components/TryAgain';
+
 
 
 function App() {
@@ -25,8 +29,37 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-
+      <div>
+        <Link to="/"><p>BankClient</p> </Link>
+      <hr />
+      </div>
       </header>
+      <Switch>
+
+          <Route  
+            path="/"
+            exact
+            component={() => <Intro />}
+          />
+
+          <Route  
+            path="/camera"
+            exact
+            component={() => <Camera />}
+          />
+
+          <Route  
+            path="/Approved"
+            exact
+            component={() => <Approved />}
+          />
+
+          <Route  
+            path="/TryAgain"
+            exact
+            component={() => <TryAgain />}
+          />
+      </Switch>
     </div>
   );
 }

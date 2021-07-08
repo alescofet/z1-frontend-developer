@@ -3,14 +3,23 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-color: white;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+    div{
+      a{
+        text-decoration: none;
+      }
+      p{
+        margin: 3vh 7vw;
+        font-weight: 700;
+        font-size: 21px;
+        text-align: left;
+        font-style: italic;
+        color: #2F0079;     
+      }
+      width: 100vw;
+    }
 }
 
 .App-link {
