@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import './id.scss';
 function Approved(){
     return(
