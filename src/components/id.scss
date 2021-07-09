@@ -71,8 +71,9 @@
    }
 }    
 .cameraBg{
-    height: 89.9vh;
-    width: 100vw;background-image: url("../images/bgImage.png");
+    height: 89.8vh;
+    width: 100vw;
+    background-image: url("../images/bgImage.png");
     background-repeat: round;
     background-size: cover;
     .cameraContainer{
@@ -84,7 +85,7 @@
         align-items: center;
         backdrop-filter: blur(2px) brightness(30%);
         color: white;
-        
+
             a{
                 color: white;
                 text-decoration: none;
@@ -93,6 +94,7 @@
             .objective{
                 background-image: url("../images/bgImage.png");
                 background-position: center;
+                background-size: cover;
                 width: 70vw;
                 height: 26vh;
                 margin:0 auto;
@@ -117,8 +119,8 @@
                 margin-bottom: 10vh;
             }
             .Id{
-                width: 250px;
-                height: 150px;
+                width: 60vw;
+                height: 20vh;
                 background-image: url("../images/driverLicense.jpg");
                 background-repeat: no-repeat;
                 background-size: cover;

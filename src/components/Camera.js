@@ -1,35 +1,20 @@
-import React, { useState } from 'react';
 import './id.scss';
 import { Link } from 'react-router-dom';
 import { ReactComponent as LampIcon } from "../images/lampLogo.svg";
 import { ReactComponent as AcceptedIcon } from "../images/acceptedLogo.svg";
-import axios from 'axios';
 
-function Camera(){
-    const [scanner,setScanner] = useState()
-    
-    
-    const scan = (()=>{
-        axios
-        .post('https://front-exercise.z1.digital/evaluations')
-        .then((result)=>{
-        setScanner(result.data.summary.outcome)
-        })
-        .catch((err)=>{
-        console.log(err)
-        })
-    })
 
+function Camera(props){
     let idCard = (
       <div>
-        <div className="objective" onClick={scan}></div>{" "}
+        <div className="objective" onClick={props.scan}></div>{" "}
         <p>
           <LampIcon /> Room lighting is too low
         </p>
       </div>
     )
 
-    if (scanner === "Approved") {
+    if (props.scanner === "Approved") {
                 idCard = (
                   <div>
                     <div className="objective accepted">
@@ -42,7 +27,7 @@ function Camera(){
                     </p>
                   </div>
                 );
-            } else if (scanner === "Too Much Glare") {
+            } else if (props.scanner === "Too Much Glare") {
                 idCard = (
                     <div>
                     <div className="objective rejected">
