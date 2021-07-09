@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@cypress/react": "^5.9.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -47,7 +46,8 @@
     ]
   },
   "devDependencies": {
+    "@cypress/react": "^5.9.1",
     "@types/react-router-dom": "^5.1.8",
-    "cypress": "^4.12.1"
+    "cypress": "^7.7.0"
   }
 }
