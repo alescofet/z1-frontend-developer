@@ -6,23 +6,23 @@
   background-color: white;
   font-size: calc(10px + 2vmin);
   color: black;
-    div{
-      a{
-        text-decoration: none;
-      }
-      p{
-        margin: 3vh 7vw;
-        font-weight: 700;
-        font-size: 21px;
-        text-align: left;
-        font-style: italic;
-        color: #2F0079;     
-      }
-      hr{
-        margin-bottom: 0;
-      }
-      width: 100vw;
+  div {
+    a {
+      text-decoration: none;
     }
+    p {
+      margin: 3vh 7vw;
+      font-weight: 700;
+      font-size: 21px;
+      text-align: left;
+      font-style: italic;
+      color: #2f0079;
+    }
+    hr {
+      margin-bottom: 0;
+    }
+    width: 100vw;
+  }
 }
 
 .App-link {

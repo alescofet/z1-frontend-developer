@@ -1,134 +1,131 @@
-.scan{
+.scan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80vw;
+
+  .approvedLabel {
+    position: relative;
+    bottom: 17px;
+    left: 100px;
+    min-width: 30vw;
+    padding: 0.5vh 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(105, 204, 139);
+    border: solid 2px rgb(105, 204, 139);
+    width: 30%;
+  }
+  .approvedId {
+    width: 250px;
+    height: 150px;
+    background-image: url("../images/driverLicense.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 2vh;
+    border: solid 2px rgb(105, 204, 139);
+    border-radius: 15px;
+  }
+
+  .rejectedLabel {
+    position: relative;
+    bottom: 17px;
+    left: 100px;
+    min-width: 30vw;
+    padding: 0.5vh 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(192, 0, 0);
+    border: solid 2px rgb(192, 0, 0);
+    width: 30%;
+  }
+
+  .rejectedId {
+    width: 250px;
+    height: 150px;
+    background-image: url("../images/driverLicense.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 2vh;
+    border: solid 2px rgb(192, 0, 0);
+    border-radius: 15px;
+  }
+  .rejectedButton {
+    position: relative;
+    bottom: 120px;
+    padding: 1.5vh 5vw;
+    border-radius: 30px;
+    color: white;
+    font-weight: 800;
+    background-color: #2f0079;
+    box-shadow: 0 10px 20px -5px rgba(47, 0, 121, 0.3);
+    border: none;
+  }
+}
+.cameraBg {
+  height: 89.8vh;
+  width: 100vw;
+  background-image: url("../images/bgImage.png");
+  background-repeat: round;
+  background-size: cover;
+  .cameraContainer {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    width: 80vw;
+    backdrop-filter: blur(2px) brightness(30%);
+    color: white;
 
-    .approvedLabel{
-        position: relative;
-        bottom: 17px;
-        left: 100px;
-        min-width: 30vw;
-        padding: 0.5vh 0;
-        border-radius: 5px;
-        color: white;
-        font-size: 15px;
-        font-weight: 600;
-        background-color: rgb(105, 204, 139);
-        border: solid 2px rgb(105, 204, 139);
-        width: 30%;
+    a {
+      color: white;
+      text-decoration: none;
     }
-    .approvedId{
-        width: 250px;
-        height: 150px;
-        background-image: url("../images/driverLicense.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0 auto;
-        margin-top: 2vh;
-        border: solid 2px rgb(105, 204, 139);
-        border-radius: 15px;
-    }
-    
-    .rejectedLabel{
-       position: relative;
-       bottom: 17px;
-       left: 100px;
-       min-width: 30vw;
-       padding: 0.5vh 0;
-       border-radius: 5px;
-       color: white;
-       font-size: 15px;
-       font-weight: 600;
-       background-color: rgb(192, 0, 0);
-       border: solid 2px rgb(192, 0, 0);
-       width: 30%;
-   }
 
-   .rejectedId{
-       width: 250px;
-       height: 150px;
-       background-image: url("../images/driverLicense.jpg");
-       background-repeat: no-repeat;
-       background-size: cover;
-       margin: 0 auto;
-       margin-top: 2vh;
-       border: solid 2px rgb(192, 0, 0);
-       border-radius: 15px;
-   }
-   .rejectedButton{
-        position: relative;
-        bottom: 120px;
-        padding: 1.5vh 5vw;
-        border-radius: 30px;
-        color: white;
-        font-weight: 800;
-        background-color: #2F0079;
-        box-shadow: 0 10px 20px -5px rgba(47,0,121,0.3);
-        border: none;
-   }
-}    
-.cameraBg{
-    height: 89.8vh;
-    width: 100vw;
-    background-image: url("../images/bgImage.png");
-    background-repeat: round;
-    background-size: cover;
-    .cameraContainer{
-        height: 100%;
-        width: 100%;
+    .objective {
+      background-image: url("../images/bgImage.png");
+      background-position: center;
+      background-size: cover;
+      width: 70vw;
+      height: 26vh;
+      margin: 0 auto;
+      border-radius: 15px;
+      background-color: white;
+      margin-bottom: 5vh;
+    }
+    .cam {
+      p {
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        flex-direction: row;
         align-items: center;
-        backdrop-filter: blur(2px) brightness(30%);
-        color: white;
-
-            a{
-                color: white;
-                text-decoration: none;
-            }
-
-            .objective{
-                background-image: url("../images/bgImage.png");
-                background-position: center;
-                background-size: cover;
-                width: 70vw;
-                height: 26vh;
-                margin:0 auto;
-                border-radius: 15px;
-                background-color: white;
-                margin-bottom: 5vh;
-            }
-            .cam{
-                p{
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: center;
-                }
-            }
-
-            .accepted{
-                border: solid 2px rgb(105, 204, 139);
-            }
-            .rejected{
-                border: solid 2px rgb(192, 0, 0);
-                margin-bottom: 10vh;
-            }
-            .Id{
-                width: 60vw;
-                height: 20vh;
-                background-image: url("../images/driverLicense.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                border-radius: 15px;
-                margin: 3vh 5vw;
-
-            }
-    
+        justify-content: center;
+      }
     }
 
+    .accepted {
+      border: solid 2px rgb(105, 204, 139);
+    }
+    .rejected {
+      border: solid 2px rgb(192, 0, 0);
+      margin-bottom: 10vh;
+    }
+    .Id {
+      width: 60vw;
+      height: 20vh;
+      background-image: url("../images/driverLicense.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 15px;
+      margin: 3vh 5vw;
+    }
+  }
 }
