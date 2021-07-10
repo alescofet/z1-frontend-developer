@@ -10,6 +10,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Features
 
-#####This app homepage let's you click a button that open a "camera" component where you'll click on the objective and this will trigger an API call that will respond with an "Approved" or "Rejected" state, after that the state will be saved.
+##### This app homepage let's you click a button that open a "camera" component where you'll click on the objective and this will trigger an API call that will respond with an "Approved" or "Rejected" state, after that the state will be saved.
 
-#####If the photo is "Approved" it'll show the idCard with a green border and an "Accepted" label until you reload the page and if the photo is "Rejected" it'll show the idCard with a red border and a "Rejected" label but this will have a purple button that let's you retake the photo.
+##### If the photo is "Approved" it'll show the idCard with a green border and an "Accepted" label until you reload the page and if the photo is "Rejected" it'll show the idCard with a red border and a "Rejected" label but this will have a purple button that let's you retake the photo.
