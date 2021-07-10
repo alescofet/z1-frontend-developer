@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ##### Before running the app you must type "npm install" in the terminal. 
 ##### Once you have installed all packages type "npm run start" in the terminal.
-##### To run tests open another terminal and type "npx cypress open".
+##### To run tests open another terminal and type "npm run test" to open the cypress GUI or type "npm run test-hl" to just run the tests in headless mode.
 
 ## Features
 
